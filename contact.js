@@ -1,3 +1,26 @@
+
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.5.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDViP9zMIeHjs0fnLjXc3qLZna81EupRm4",
+    authDomain: "knowledge-hub-4ca14.firebaseapp.com",
+    projectId: "knowledge-hub-4ca14",
+    storageBucket: "knowledge-hub-4ca14.firebasestorage.app",
+    messagingSenderId: "943216865241",
+    appId: "1:943216865241:web:be0062797b695060b3f3c8",
+    measurementId: "G-G0FS3MKN53"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 require('dotenv').config();
 const express = require('express');
 const bodyParser = require('body-parser');
@@ -66,4 +89,5 @@ ${message}
 
 // Start server
 app.listen(PORT, () => console.log(`Server running at http://localhost:${PORT}`));
+
 
